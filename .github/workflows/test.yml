@@ -50,5 +50,8 @@ jobs:
       - name: Run tests
         run: pytest --cov-report html --cov=my_package tests/
 
+      - name: Navigate to the script directory
+        run: cd path/to/script
+
       - name: Run main_script.py
         run: python main_script.py
